@@ -1,12 +1,63 @@
 extends ../layout/layout.pug
 
-block content
-  main.main
-    .font-regular
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-bold
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-medium
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
-    .font-regular-moon
-      | ELLANSÉ® предназначен для субдермальных инъекций. Благодаря своей когезивности, ELLANSÉ® может легко приобретать необходимую форму, обеспечивая большую точность при коррекции формы и контуров
+block content     
+    header.header
+      .header-wrapper
+        .top
+          .socials
+            .whatsapp
+              img(src='../../images/img/whatsapp.svg' alt='whatsapp')
+            .instagram
+              img(src='../../images/img/instagram.svg' alt='instagram')
+            .telegram
+              img(src='../../images/img/telegram.svg' alt='telegram')
+          nav.header-nav
+            ul.header-list
+              li.header-item + 7(978) 984-36-87
+              li.header-item tatevichk@gmail.com
+              li.header-item Цены
+              li.header-button 
+                a.button-link(href="#") Заказать проект     
+        .intro
+          p.into-text Архитектурная студия
+          h1.intro-title Пайлеванян<br>Татевик
+    .site-content 
+      section.body-info 
+        .body-info-picture 
+          img(src='../../images/img/body-info-picture.png', alt="")        
+        .body-info-text 
+          .heading-text Представляю вашему <br> вниманию <br> индивидуальный <br> проект жилого дома 
+          .intro-body-text Главная идея
+          .content-body-text получить уютное уединенное <br> место для молодой семьи, вдали <br> от городского шума и суеты.
+          .outro-list 
+            .outro-item Год: 2021
+            .outro-item Местонахождение: <span class="item-style">Московская область</span>
+            .outro-item Архитектор: <span class="item-style">Пайлеванян Татевик</span>
+            .outro-item Визуализатор: <span class="item-style">Бессарабова Яна</span>
+            .outro-item Софт: <span class="item-style">ArchiCAD, 3D max, Corona renderer, Adobe photoshop</span>
+    .site-picture
+        img(src='../../images/img/1.png', alt="")
+        img(src='../../images/img/2.png', alt="")
+        img(src='../../images/img/3.png', alt="")
+        img(src='../../images/img/4.png', alt="")
+        img(src='../../images/img/5.png', alt="")
+        img(src='../../images/img/6.png', alt="")
+    section.review 
+      .review-header Отзывы клиентов
+        img(src='../../images/img/arrow.svg', alt="")
+      .review-body-intro
+        .review-body 
+          .review-intro
+            img(src='../../images/img/dmitrybeteev.png', alt="")
+          .review-intro-content Дмитрий Батеев <br> <span class="instagram-style">instagram</span>
+        .review-body-content Все началось в период пандемии когда мы с семьей решили обустроить уютное дачное гнездышко. В итоге каждый <br> последующий шаг рос перечень наших потребностей и желаний желания. В конце концов было принято решение <br> основательное решение -строительство дома для постоянного места жительства, а значит без участия <br> профессионального архитектора задача была бы нереализуема. В поисках компетентного, чуткого, отзывчивого <br> специалиста своего дела. При это задача стояла не из легких, а именно перенести визуализацию наших желаний в <br> полноценную картину, отвечающую ещё и строительным стандартам. Волею судьбы нам посчастливилось познакомиться <br> с настоящим профессионалом. Работа с которой доставляла удовлетворение о том что тебя слышат и реагируют. Дом с <br> каждым днем преображался и процесс проектирование был легким и внушающим уверенность. Решения предложенные <br> нашим архитектором для нас были неожиданно приятными и инновационными. Конечно особо хотелось отметить гибкую <br> и демократичную систему оплаты. Проще говоря спасибо Вам уважаемая .... за Ваш вклад в воплощение нашей мечты! 
+      .review-footer 
+        .review-footer-title Если вас заинтересовала моя работа, <br> то оставьте свои данные для связи
+        .rewiew-search 
+          p.search-form-info 
+            input.search-form-field(type="text" placeholder="Имя")
+            input.search-form-field(type="text" placeholder="Номер телефона")
+            input.search-form-field(type="text" placeholder="E-mail")
+            button.search-field-button Отправить данные
+          .review-content Отправляя форму, Вы соглашаетесь с нашей 
+            a.warning(href="#")  политикой конфиденциальности  
