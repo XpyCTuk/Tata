@@ -6,19 +6,11 @@
   font-weight: $medium;
 }
 
-//.font-regular-moon {
-  //font-family: $font-moon-family;
-//}
-
-.header {
-  //background-image: url(../../src/images/img/intro-background.png);
-  //background-repeat: no-repeat;
-  //min-height: 900px;
-  //max-width: 1440px;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: space-between;
+body {
+  font-family: CeraPro;
 }
+
+//start header
 
 .header-wrapper {
   padding-left: 165px;
@@ -26,23 +18,43 @@
   padding-top: 64px;
   background-image: url(../../src/images/img/intro-background.png);
   background-repeat: no-repeat;
-  min-height: 900px;
-  max-width: 1440px;
+  background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  @include mobile {
+    padding-top: 20px;
+    padding-left: 0px;
+    padding-right: 25px;
+    background-image: url(../../src/images/img/mobile-header.png);
+    padding-bottom: 58px;
+    max-width: 100%;
+    background-size: cover;
+  }
+  @include tablet {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+  }
 }
 
 .top {
   color: aliceblue;
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   align-items: flex-end;
+  @include mobile {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .socials {
   display: flex;
+  @include mobile {
+    padding-left: 20px;
+  }
 }
 
 .instagram {
@@ -53,43 +65,133 @@
   margin-left: 20px;
 }
 
-.header-list{
+.header-list {
   display: flex;
   align-items: flex-end;
   list-style-type: none;
   margin: auto;
+  white-space: nowrap;
+  @include mobile {
+    display: none;
+    flex-direction: column;
+    //   &.menu_icon_open {
+    //     display: none;
+    //     @include mobile {
+    //       display: flex;
+    //     }
+    //   }
+  }
+  @include tablet {
+    padding-left: 0px;
+  }
+}
+
+.menu_icon_open {
+  display: none;
+  @include mobile {
+    display: block;
+  }
 }
 
 .header-item {
   margin-right: 40px;
 }
 
-.button-link{
+.button-link {
   text-decoration: none;
   color: black;
   background-color: white;
   padding: 9px 24px;
 }
 
-.intro  {
+.intro {
   margin-top: 460px;
+  @include mobile {
+    margin-top: 334px;
+  }
+  @include tablet {
+    margin-top: 400px;
+  }
 }
 
 .intro-title {
   color: white;
   font-size: 80px;
+  line-height: 96px;
+  @include mobile {
+    font-size: 40px;
+    line-height: 48px;
+  }
+  @include tablet {
+  }
 }
 
-.into-text  {
-  color:white;
+.into-text {
+  color: white;
   font-size: 28px;
+  @include mobile {
+    font-size: 24px;
+  }
 }
 
-//fo body
+.mobile-header-button-link {
+  display: none;
+  @include mobile {
+    display: block;
+    text-decoration: none;
+    color: white;
+    background-color: #f45050;
+    padding: 13px 0px;
+    margin-left: 16px;
+    margin-top: 24px;
+    text-align: center;
+    max-width: 343px;
+    width: 100%;
+  }
+}
+
+.mobile-header-button {
+  @include mobile-s {
+    margin-right: 30px;
+  }
+}
+
+//end header
+
+//start body
+
+.info-picture {
+  background-size: cover;
+  @include mobile {
+    margin-top: 0px;
+    display: none;
+  }
+}
+
+.mobile-info-picture {
+  display: none;
+  @include mobile {
+    margin-top: 0px;
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+}
 
 .body-info {
   display: flex;
   margin-top: 204px;
+  @include mobile {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  @include tablet {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+  }
 }
 
 .body-info-text {
@@ -97,15 +199,32 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  @include mobile {
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+  @include tablet {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 }
 
 .heading-text {
+  font-family: CeraPro;
   font-size: 32px;
   margin-bottom: 40px;
+  @include mobile {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: inherit;
+  }
+  @include tablet {
+    width: inherit;
+  }
 }
 
 .intro-body-text {
-  color: #F45050;
+  color: #f45050;
   margin-bottom: 14px;
 }
 
@@ -122,86 +241,240 @@
   margin-bottom: 12px;
 }
 
-//to next block
+//end body
 
+//для картинок в центре сайта
 
-.site-picture{
-  margin-top: 204px;
+.site-picture-1 {
+  max-width: 100%;
 }
 
+.site-picture-2 {
+  max-width: 100%;
+}
 
-// fo review section
+.site-picture-3 {
+  max-width: 100%;
+}
 
+.site-picture-4 {
+  max-width: 100%;
+}
+
+.site-picture-5 {
+  max-width: 100%;
+}
+
+.site-picture-6 {
+  max-width: 100%;
+}
+
+.site-picture {
+  @include mobile {
+    display: none;
+  }
+}
+
+.mobile-site-picture {
+  display: none;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}
+// конец картинок
+
+//блок отзывов начало
 .review-header {
   display: flex;
   justify-content: space-between;
   padding-top: 109px;
   padding-left: 165px;
   padding-right: 107px;
+  @include mobile {
+    padding-top: 0px;
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
-.review-body{
+.review-body {
   display: flex;
   align-items: center;
   margin-top: 56px;
-
+  @include mobile {
+    margin-top: 10px;
+  }
 }
 
 .review-body-intro {
   padding-left: 189px;
+  @include mobile {
+    padding-left: 44px;
+    padding-right: 44px;
+    margin-top: 25px;
+  }
 }
 
 .review-intro-content {
   margin-left: 16px;
 }
 
-.review-body-content{
+.review-body-content {
   margin-top: 16px;
+  font-family: CeraPro;
 }
 
-//fo footers
-
-.review-footer {
-  //padding-left: 257px;
+.instagram-style {
+  color: #f45050;
+  text-decoration: underline;
+  margin-top: 5px;
 }
+//блок отзывов конец
 
-.review-footer-title  {
+//подвал начало
+.review-footer-title {
   margin-top: 257px;
   padding-left: 165px;
+  @include mobile {
+    text-align: center;
+    padding-left: 0px;
+    margin-top: 40px;
+  }
 }
 
 .search-form-info {
   display: flex;
-  padding-left: 165px;
   padding-top: 40px;
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+  }
 }
 
-.search-form-field  {
+.search-form-field {
   border: 0px;
-  border-bottom: 0.7px solid #000000;;
+  border-bottom: 0.7px solid #000000;
   margin-right: 40px;
   outline: none;
+  @include mobile {
+    margin-left: 30px;
+    margin-bottom: 40px;
+    margin-right: 30px;
+  }
 }
 
-.search-field-button{
+.search-field-button {
   padding: 8px 50px;
-  background-color: #F45050;
+  background-color: #f45050;
   color: white;
   border: 0;
+  @include mobile {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
 }
 
 .review-content {
   padding-top: 24px;
   padding-left: 165px;
+  @include mobile {
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 0px;
+  }
 }
 
 .warning {
-  color: #F45050;
+  color: #f45050;
   text-decoration: underline;
 }
 
-.instagram-style {
-  color:#F45050;
-  text-decoration: underline;
-  margin-top: 5px;
+//подвал конец
+
+//бургер начало
+
+.menu {
+  display: none;
+  width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  transform: translateX(100%);
+  transition: transform 0.5s linear;
+  background-color: #fff;
+  //background-image: url(../../src/images/img/burger-active.svg);
+
+  &.active {
+    transform: unset;
+    //background-image: url(../../src/images/img/burger-active.svg);
+    //background-repeat: no-repeat;
+    //background-position: 96% 3%;
+  }
+  @include mobile {
+    display: flex;
+  }
+
+  .menu_icon_close {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+  }
+
+  .menu_icon_open {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+  }
 }
+
+.menu-list {
+  list-style-type: none;
+  font-size: 24px;
+  padding-left: 0px;
+  margin-left: 32px;
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu-item {
+  margin-bottom: 32px;
+}
+
+.menu-email {
+  text-decoration: underline;
+  margin-bottom: 32px;
+}
+
+.menu-tel {
+  margin-bottom: 32px;
+}
+
+.menu-socials {
+  display: flex;
+  padding-left: 0px;
+}
+
+.whatsapp-menu {
+  margin-right: 18px;
+}
+
+.instagram-menu {
+  margin-right: 18px;
+}
+
+.menu-button {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 13px 85px;
+  background-color: red;
+  margin-top: 123;
+  font-size: 22px;
+  color: white;
+}
+
+//бургер конец
