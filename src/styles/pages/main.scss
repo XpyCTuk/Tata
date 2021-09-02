@@ -70,6 +70,7 @@ body {
   align-items: flex-end;
   list-style-type: none;
   margin: auto;
+  margin-right: 4px;
   white-space: nowrap;
   @include mobile {
     display: none;
@@ -247,6 +248,7 @@ body {
 
 .site-picture-1 {
   max-width: 100%;
+  margin-top: 204px;
 }
 
 .site-picture-2 {
@@ -330,6 +332,12 @@ body {
   text-decoration: underline;
   margin-top: 5px;
 }
+
+.vk-style {
+  color: #f45050;
+  text-decoration: underline;
+  margin-top: 5px;
+}
 //блок отзывов конец
 
 //подвал начало
@@ -346,10 +354,12 @@ body {
 .search-form-info {
   display: flex;
   padding-top: 40px;
+  margin-left: 165px;
   @include mobile {
     display: flex;
     flex-direction: column;
     padding-left: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -478,3 +488,7 @@ body {
 }
 
 //бургер конец
+
+//тест слайдера
+
+//тест слайдера
