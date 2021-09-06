@@ -1,7 +1,41 @@
 extends ../layout/layout.pug
 
 block content   
+
+    //.popup-container
+      .popup
+        .close-popup 
+          include ../../images/img/popup-close.svg      
+        .popup-header Прайс-лист на архитектурные работы 
+        .popup-body Проектные работы, m2 
+        .popup-body-item ЭП (эскизное предложение) <span class="prise-style_1">200 ₽</span>
+        .popup-body-item АР (архитектурные решения) <span class="prise-style_2">200 ₽</span>
+        .popup-body-item-last КР (конструктивные решения) <span class="prise-style_3">200 ₽</span>
+        .popup-footer Реализация
+        .popup-footer-item Авторский надзор <span class="prise-style_4">5000 ₽ / час</span>
+        .popup-footer-item-last Комплектация, <br> работа с поставщиками <span class="prise-style_5">20% от стоимости</span>
       
+    .modal  
+      .modal-wrapper   
+        .modal-content
+          .close-modal 
+            include ../../images/img/popup-close.svg
+          .modal-title Прайс-лист на архитектурные работы 
+          .modal-header Проектные работы, m2 
+        .modal-body
+          .modal-content ЭП (эскизное предложение) <span class="prise-style_1">200 ₽</span>
+          .modal-content АР (архитектурные решения) <span class="prise-style_2">200 ₽</span>
+          .modal-content КР (конструктивные решения) <span class="prise-style_3">200 ₽</span>
+        .modal-footer
+          .modal-footer-title Реализация           
+          .modal-footer-content Авторский надзор <span class="prise-style_4">5000 ₽ / час</span>
+          .modal-footer-content Комплектация, <br> работа с поставщиками <span class="prise-style_5">20% от стоимости</span> 
+        a.modal-button Заказать проект  
+      
+    
+
+
+  
     header.header
       .header-wrapper
         .top
@@ -15,10 +49,10 @@ block content
           nav.header-nav
           .menu_icon_open 
             include ../../images/img/burger.svg  
-          ul.header-list.active
+          ul.header-list
             li.header-item + 7(978) 984-36-87
             li.header-item tatevichk@gmail.com
-            li.header-item Цены
+            li.header-item.popup-button Цены
             li.header-button 
               a.button-link(href="#") Заказать проект                           
         .intro

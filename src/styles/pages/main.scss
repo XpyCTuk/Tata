@@ -10,6 +10,151 @@ body {
   font-family: CeraPro;
 }
 
+//начало
+.modal-wrapper {
+  max-width: 608px;
+  max-height: 642px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding-left: 56px;
+  margin-bottom: 129px;
+  margin-left: 416px;
+  margin-top: 129px;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin-top: 56px;
+}
+
+.modal-header {
+  font-size: 18px;
+  margin-top: 38px;
+}
+
+.modal-content {
+  font-size: 18px;
+  margin-top: 24px;
+}
+
+.modal-footer-title {
+  font-size: 18px;
+  margin-top: 55px;
+}
+
+.modal-footer-content {
+  font-size: 18px;
+  margin-top: 25px;
+}
+
+.modal-button {
+  background-color: #f45050;
+  color: #fff;
+  padding: 7 63;
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 200px;
+  margin-bottom: 32px;
+  margin-top: 40px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+//конец
+
+//попап цены
+
+.popup-container {
+  backdrop-filter: blur(40px);
+}
+
+.active-popup {
+  display: block;
+  min-height: 642px;
+  position: fixed;
+  margin-left: 416;
+  margin-top: 129px;
+  background-color: white;
+  padding-left: 56px;
+  padding-top: 56px;
+  padding-right: 100px;
+  background: blur(40px);
+}
+
+.popup-header {
+  font-size: 24px;
+  margin-bottom: 38px;
+}
+
+.popup-body {
+  margin-bottom: 38px;
+  font-size: 18px;
+}
+
+.popup-body-item {
+  margin-bottom: 24px;
+  font-size: 18px;
+}
+
+.popup-body-item-last {
+  margin-bottom: 55px;
+  font-size: 18px;
+}
+
+.popup-footer {
+  margin-bottom: 23px;
+  font-size: 18px;
+}
+
+.popup-footer-item {
+  margin-bottom: 25px;
+  font-size: 18px;
+}
+
+.popup-footer-item-last {
+  font-size: 18px;
+}
+
+.prise-style_1 {
+  margin-left: 147px;
+  font-size: 18px;
+  color: #f45050;
+}
+
+.prise-style_2 {
+  margin-left: 141px;
+  font-size: 18px;
+  color: #f45050;
+}
+
+.prise-style_3 {
+  margin-left: 132px;
+  font-size: 18px;
+  color: #f45050;
+}
+
+.prise-style_4 {
+  margin-left: 171px;
+  font-size: 18px;
+  color: #f45050;
+}
+
+.prise-style_5 {
+  margin-left: 76px;
+  font-size: 18px;
+  color: #f45050;
+}
+
+.popup-icon-close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+}
+//попап цены
+
 //start header
 
 .header-wrapper {
