@@ -2,18 +2,18 @@ extends ../layout/layout.pug
 
 block content   
 
-    //.popup-container
-      .popup
-        .close-popup 
-          include ../../images/img/popup-close.svg      
-        .popup-header Прайс-лист на архитектурные работы 
-        .popup-body Проектные работы, m2 
-        .popup-body-item ЭП (эскизное предложение) <span class="prise-style_1">200 ₽</span>
-        .popup-body-item АР (архитектурные решения) <span class="prise-style_2">200 ₽</span>
-        .popup-body-item-last КР (конструктивные решения) <span class="prise-style_3">200 ₽</span>
-        .popup-footer Реализация
-        .popup-footer-item Авторский надзор <span class="prise-style_4">5000 ₽ / час</span>
-        .popup-footer-item-last Комплектация, <br> работа с поставщиками <span class="prise-style_5">20% от стоимости</span>
+    .modal-form
+      .modal-form-wrapper 
+        .modal-form-content
+          .modal-form-title Оставьте свои данные для связи, <br> чтобы я могла связаться с вами
+        .modal-form-container
+          .modal-search-form
+            input.modal-form-field(type="text" placeholder="Имя")
+            input.modal-form-field(type="text" placeholder="Номер телефона")
+            input.modal-form-field(type="text" placeholder="E-mail")
+            a.form-button Заказать проект
+            .warning-form Отправляя форму, Вы соглашаетесь с нашей <br> <span class="warning-form-style">политикой конфиденциальности</span>
+
       
     .modal  
       .modal-wrapper   
