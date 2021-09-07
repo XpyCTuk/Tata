@@ -21,12 +21,12 @@ $(() => {
 })
 
 $(() => {
-  $('.popup-button').on('click', () => {
-    $('.popup-container').addClass('active-popup');
+  $('.modal-button-header').on('click', () => {
+    $('.modal').addClass('modal-open');
   })
 
-  $('.close-popup').on('click', () => {
-    $('.popup-container').removeClass('active-popup');
+  $('.close-modal').on('click', () => {
+    $('.modal').removeClass('modal-open');
 
 
     $(() => {
@@ -35,6 +35,5 @@ $(() => {
 
   })
 })
-
 
 

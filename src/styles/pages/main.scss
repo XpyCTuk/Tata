@@ -11,14 +11,29 @@ body {
 }
 
 //начало
-.modal-wrapper {
-  max-width: 608px;
-  max-height: 642px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  padding-left: 56px;
-  margin-bottom: 129px;
-  margin-left: 416px;
-  margin-top: 129px;
+
+.modal {
+  display: none;
+}
+
+.modal-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(40px);
+
+  .modal-wrapper {
+    position: fixed;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
 
 .modal-title {
@@ -34,6 +49,12 @@ body {
 .modal-content {
   font-size: 18px;
   margin-top: 24px;
+  padding-left: 56px;
+  padding-right: 112px;
+}
+
+.modal-footer {
+  padding-left: 56px;
 }
 
 .modal-footer-title {
@@ -50,12 +71,12 @@ body {
   background-color: #f45050;
   color: #fff;
   padding: 7 63;
-  display: flex;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 200px;
   margin-bottom: 32px;
   margin-top: 40px;
+  display: block;
+  text-align: center;
+  margin-left: 179px;
+  margin-right: 179px;
 }
 
 .close-modal {
