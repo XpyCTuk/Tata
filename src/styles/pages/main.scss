@@ -12,7 +12,42 @@ body {
 
 //форма в модале
 
+.modal-form {
+  display: none;
+}
+
+.modal-form-content {
+  background-color: #fff;
+  margin: 5% auto;
+}
+
+.modal-form-open {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(40px);
+
+  .modal-form-content {
+    max-width: 790px;
+    min-height: 546px;
+  }
+}
+
 .modal-form-wrapper {
+  // display: block;
+  // border: 1px solid rgba(0, 0, 0, 0.3);
+  // box-sizing: border-box;
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // bottom: 0;
+  // right: 0;
+  // background: rgba(255, 255, 255, 0.4);
+  // backdrop-filter: blur(40px);
 }
 
 .modal-form-title {
@@ -51,6 +86,13 @@ body {
   text-decoration: underline;
 }
 
+.close-modal-form {
+  position: relative;
+  justify-content: flex-end;
+  display: flex;
+  top: 32px;
+  right: 32px;
+}
 //форма в модале
 
 //начало

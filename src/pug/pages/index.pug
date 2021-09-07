@@ -5,8 +5,9 @@ block content
     .modal-form
       .modal-form-wrapper 
         .modal-form-content
+          .close-modal-form 
+            include ../../images/img/form-close.svg
           .modal-form-title Оставьте свои данные для связи, <br> чтобы я могла связаться с вами
-        .modal-form-container
           .modal-search-form
             input.modal-form-field(type="text" placeholder="Имя")
             input.modal-form-field(type="text" placeholder="Номер телефона")
@@ -53,7 +54,7 @@ block content
             li.header-item + 7(978) 984-36-87
             li.header-item tatevichk@gmail.com
             li.header-item.modal-button-header Цены
-            li.header-button 
+            li.header-button.modal-form-button
               a.button-link(href="#") Заказать проект                           
         .intro
         p.into-text Архитектурная студия

@@ -20,6 +20,8 @@ $(() => {
   })
 })
 
+//начало модал
+
 $(() => {
   $('.modal-button-header').on('click', () => {
     $('.modal').addClass('modal-open');
@@ -36,4 +38,44 @@ $(() => {
   })
 })
 
+//конец модал
 
+//начало модал форм 
+
+$(() => {
+  $('.modal-form-button').on('click', () => {
+    $('.modal-form').addClass('modal-form-open');
+  })
+
+  $('.close-modal-form').on('click', () => {
+    $('.modal-form').removeClass('modal-form-open');
+
+
+    $(() => {
+      console.log("ready!");
+    });
+
+  })
+})
+
+//конец модал форм
+
+//переход начало 
+
+$(() => {
+  $('.modal-button').on('click', () => {
+    $('.modal-wrapper').removeClass('modal-open');
+  })
+
+  $('.modale-button').on('click', () => {
+    $('.modal-form').addClass('modal-form-open');
+
+
+    $(() => {
+      console.log("ready!");
+    });
+
+  })
+})
+
+//переход конец 
