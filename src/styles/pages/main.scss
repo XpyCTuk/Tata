@@ -741,5 +741,49 @@ body {
 //бургер конец
 
 //тест слайдера
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 165px;
+  padding-right: 165px;
+  margin-top: 205px;
+  padding-bottom: 64px;
+}
 
+.swiper-wrapper {
+  margin-top: 400px;
+  display: flex;
+}
+
+.social-footer {
+  display: flex;
+}
+
+.footer-list {
+  display: flex;
+  align-items: flex-end;
+  list-style-type: none;
+  margin: auto;
+  margin-right: 4px;
+  white-space: nowrap;
+}
+
+.instagram-footer {
+  margin-left: 20px;
+}
+
+.telegram-footer {
+  margin-left: 20px;
+}
+
+.footer-item {
+  margin-right: 40px;
+}
+
+.footer-button-link {
+  padding: 9px 24px;
+  background-color: #f45050;
+  color: #fff;
+  text-decoration: none;
+}
 //тест слайдера
