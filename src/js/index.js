@@ -1,7 +1,7 @@
 import jquery from 'jquery'
 window.$ = window.jQuery = jquery;
 import module from './module'
-
+import 'slick-carousel';
 
 
 
@@ -63,6 +63,7 @@ $(() => {
 //переход начало 
 
 $(() => {
+  $('.single-item').slick();
   $('.modal-button').on('click', () => {
     $('.modal-wrapper').removeClass('modal-open');
   })
@@ -70,12 +71,13 @@ $(() => {
   $('.modale-button').on('click', () => {
     $('.modal-form').addClass('modal-form-open');
 
-
-    $(() => {
-      console.log("ready!");
-    });
-
   })
 })
 
 //переход конец 
+
+
+//слайды начало 
+
+
+//слайды конец 
