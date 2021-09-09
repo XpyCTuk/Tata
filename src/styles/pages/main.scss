@@ -30,7 +30,7 @@ body {
   right: 0;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(40px);
-
+  z-index: 1;
   .modal-form-content {
     max-width: 790px;
     min-height: 546px;
@@ -110,7 +110,7 @@ body {
   right: 0;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(40px);
-
+  z-index: 1;
   .modal-wrapper {
     position: fixed;
     border: 1px solid rgba(0, 0, 0, 0.3);
@@ -810,4 +810,20 @@ body {
 
 .slick-slide {
   height: 310px;
+}
+
+.slide-1 {
+  max-width: 100%;
+}
+
+.slide-2 {
+  max-width: 100%;
+}
+
+.slide-3 {
+  max-width: 100%;
+}
+
+.slide-4 {
+  max-width: 100%;
 }
