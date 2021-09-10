@@ -2,17 +2,17 @@ extends ../layout/layout.pug
 
 block content   
 
-    .modal-form
+    form.modal-form#form
       .modal-form-wrapper 
         .modal-form-content
           .close-modal-form 
             include ../../images/img/form-close.svg
           .modal-form-title Оставьте свои данные для связи, <br> чтобы я могла связаться с вами
           .modal-search-form
-            input.modal-form-field(type="text" placeholder="Имя")
-            input.modal-form-field(type="text" placeholder="Номер телефона")
-            input.modal-form-field(type="text" placeholder="E-mail")
-            a.form-button Заказать проект
+            input.modal-form-field#name(type="text" placeholder="Имя")
+            input.modal-form-field#phone(type="text" placeholder="Номер телефона")
+            input.modal-form-field#email(type="text" placeholder="E-mail")
+            button(type="submit").form-button Заказать проект
             .warning-form Отправляя форму, Вы соглашаетесь с нашей <br> <span class="warning-form-style">политикой конфиденциальности</span>
 
       
@@ -128,17 +128,17 @@ block content
             .review-intro
               img(src='../../images/img/potyraoleg.png', alt="")
             .review-intro-content Новицкий Руслан <br> <span class="instagram-style">instagram</span>
-          .review-body-content Осенью 2020 решил построить загородный дом для семьи <br> из 5 человек. Дом хотел для круглогодичного проживания. <br> Самое первое что нужно для этого-проект! А точнее <br> хороший проект! В долгих поисках кто мне сделает мой <br> проект я нашел   Татевик! Я предоставил свои пожелания и <br> работа пошла. Проект был готов примерно через месяц. <br> Как бывает при проектировании было много переделок , <br> так как я менял свои запросы! Татевик делала все грамотно <br> и вносила свои нужные улучшения! Сейчас идет стройка и <br> она меня до сих пор консультирует! Спасибо большое!
+          .review-body-content Осенью 2020 решил построить загородный дом для семьи из 5 человек. Дом хотел для круглогодичного проживания. <br> Самое первое что нужно для этого-проект! А точнее хороший проект! В долгих поисках кто мне сделает мой проект я нашел   Татевик! <br> Я предоставил свои пожелания и работа пошла. Проект был готов примерно через месяц. Как бывает при проектировании было много переделок , так как я менял свои запросы! Татевик делала все грамотно и вносила свои нужные улучшения! <br> Сейчас идет стройка и она меня до сих пор консультирует! Спасибо большое!
 
           
     .review-footer 
       .review-footer-title Если вас заинтересовала моя работа, <br> то оставьте свои данные для связи
         .rewiew-search 
-          p.search-form-info 
-            input.search-form-field(type="text" placeholder="Имя")
-            input.search-form-field(type="text" placeholder="Номер телефона")
-            input.search-form-field(type="text" placeholder="E-mail")
-            button.search-field-button Отправить данные
+          form.search-form-info#form2  
+            input.search-form-field#name2(type="text" placeholder="Имя")
+            input.search-form-field#phone2(type="text" placeholder="Номер телефона")
+            input.search-form-field#email2(type="text" placeholder="E-mail")
+            button(type="submit").search-field-button Отправить данные
           .review-content Отправляя форму, Вы соглашаетесь с нашей 
             a.warning(href="#")  политикой конфиденциальности  
     .footer-bar 

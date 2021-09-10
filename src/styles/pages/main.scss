@@ -26,7 +26,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  bottom: 0;
+  bottom: -50;
   right: 0;
   background: rgba(255, 255, 255, 0.4);
   backdrop-filter: blur(40px);
@@ -74,6 +74,7 @@ body {
   padding: 7px 55px;
   background-color: #f45050;
   color: #fff;
+  border: 0px;
 }
 
 .warning-form {
@@ -561,7 +562,7 @@ body {
 }
 
 .review-body-intro {
-  padding-left: 189px;
+  padding-left: 40px;
   @include mobile {
     padding-left: 44px;
     padding-right: 44px;
@@ -592,14 +593,21 @@ body {
 //блок отзывов конец
 
 //подвал начало
+.footer-item {
+  @include tablet {
+    margin-top: 32px;
+  }
+}
+
 .review-footer-title {
-  //margin-top: 257px;
   padding-left: 165px;
-  margin-top: 257px;
   @include mobile {
     text-align: center;
     padding-left: 0px;
     margin-top: 40px;
+  }
+  @include tablet {
+    padding-left: 50px;
   }
 }
 
@@ -695,7 +703,7 @@ body {
   list-style-type: none;
   font-size: 24px;
   padding-left: 0px;
-  margin-left: 32px;
+  margin-left: 40px;
   margin-top: 0px;
   display: flex;
   flex-direction: column;
@@ -740,6 +748,13 @@ body {
 
 //бургер конец
 
+.swiper-wrapper {
+  margin-top: 400px;
+  display: flex;
+}
+
+//конец подвала
+
 .footer-bar {
   display: flex;
   justify-content: space-between;
@@ -747,15 +762,9 @@ body {
   padding-right: 165px;
   margin-top: 205px;
   padding-bottom: 64px;
-}
-
-.swiper-wrapper {
-  margin-top: 400px;
-  display: flex;
-}
-
-.social-footer {
-  display: flex;
+  @include tablet {
+    flex-direction: column;
+  }
 }
 
 .footer-list {
@@ -765,14 +774,10 @@ body {
   margin: auto;
   margin-right: 4px;
   white-space: nowrap;
-}
-
-.instagram-footer {
-  margin-left: 20px;
-}
-
-.telegram-footer {
-  margin-left: 20px;
+  @include tablet {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer-item {
@@ -784,8 +789,29 @@ body {
   background-color: #f45050;
   color: #fff;
   text-decoration: none;
+  @include tablet {
+    display: none;
+  }
 }
-//тест слайде
+
+.social-footer {
+  display: flex;
+  @include tablet {
+    justify-content: center;
+    display: flex;
+  }
+}
+
+.instagram-footer {
+  margin-left: 20px;
+}
+
+.telegram-footer {
+  margin-left: 20px;
+}
+//конец подвала
+
+//слайдер начало
 .slick-prev {
   background-image: url(../../src/images/img/prev-slide.svg);
   background-repeat: no-repeat;
@@ -809,7 +835,7 @@ body {
 }
 
 .slick-slide {
-  height: 310px;
+  height: 100%;
 }
 
 .slide-1 {
@@ -827,3 +853,4 @@ body {
 .slide-4 {
   max-width: 100%;
 }
+//слайдер конец
