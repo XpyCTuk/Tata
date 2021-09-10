@@ -545,6 +545,7 @@ body {
   padding-top: 109px;
   padding-left: 165px;
   padding-right: 107px;
+  font-size: 32px;
   @include mobile {
     padding-top: 0px;
     display: flex;
@@ -572,11 +573,13 @@ body {
 
 .review-intro-content {
   margin-left: 16px;
+  font-size: 18px;
 }
 
 .review-body-content {
   margin-top: 16px;
   font-family: CeraPro;
+  font-size: 16px;
 }
 
 .instagram-style {
@@ -607,7 +610,7 @@ body {
     margin-top: 40px;
   }
   @include tablet {
-    padding-left: 50px;
+    padding-left: 0px;
   }
 }
 
@@ -741,9 +744,12 @@ body {
   list-style-type: none;
   padding: 13px 85px;
   background-color: red;
-  margin-top: 123;
+  margin-top: 123px;
   font-size: 22px;
   color: white;
+  @include mobile-s {
+    margin-right: 33px;
+  }
 }
 
 //бургер конец
@@ -764,6 +770,8 @@ body {
   padding-bottom: 64px;
   @include tablet {
     flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
@@ -818,8 +826,11 @@ body {
   border: 0;
   color: white;
   background-color: white;
-  padding-left: 44;
-  margin-left: 107;
+  padding-left: 44px;
+  margin-left: 107px;
+  @include mobile {
+    margin-left: 50px;
+  }
 }
 
 .slick-next {
@@ -827,11 +838,15 @@ body {
   background-repeat: no-repeat;
   position: absolute;
   left: 90%;
-  bottom: 95%;
+  bottom: 97.5%;
   color: white;
   background-color: white;
-  padding-right: 44;
+  //padding-right: 44px;
   border: 0;
+  @include mobile {
+    left: 80%;
+    bottom: 97.3%;
+  }
 }
 
 .slick-slide {
